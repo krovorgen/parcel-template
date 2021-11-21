@@ -1,7 +1,7 @@
-# Gulp template
-1. npm i
-2. gulp - for start gulp
-3. gulp build - production
+# Parcel template
+1. yarn
+2. yarn dev - for start parcel
+3. yarn build - production
 
 ### To deploy app
 1. npm run deploy
