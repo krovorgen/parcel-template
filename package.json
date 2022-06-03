@@ -7,8 +7,10 @@
     "stylelint": "stylelint \"**/*.scss\"",
     "stylelint:fix": "stylelint \"**/*.scss\" --fix",
     "deploy": "gh-pages -d dist",
-    "dev": "parcel -p 3000 --no-cache --open chrome",
-    "build": "rm -rf dist & parcel build"
+    "dev": "parcel -p 3000 --open chrome",
+    "build": "rm -rf dist & parcel build",
+    "lint": "eslint . && prettier -c \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/*.ts\"",
+    "fmt": "prettier --write \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/*.ts\""
   },
   "dependencies": {
     "parcel": "^2.6.0"
@@ -21,6 +23,12 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
     "@types/node": "^17.0.31",
+    "@babel/eslint-parser": "^7.18.2",
+    "eslint": "^8.16.0",
+    "eslint-config-metarhia": "^7.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.4.1",
     "stylelint": "^13.13.1",
     "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
