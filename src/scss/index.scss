@@ -1,6 +1,6 @@
-@import "base/mixins";
-@import "base/variables";
-@import "libs/reset";
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "core/reset";
 
 .canvas {
   display: flex;
